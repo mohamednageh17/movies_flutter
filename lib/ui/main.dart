@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:movie_flutter/provider_practice.dart';
 import 'package:movie_flutter/ui/screens/home/home_screen.dart';
 import 'package:movie_flutter/ui/screens/language/language_screen.dart';
 import 'package:movie_flutter/ui/screens/profile/profile_screen.dart';
 import 'package:movie_flutter/ui/screens/settings/settings_screen.dart';
-import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-    create: (context) => Counter(),
-    child: const MyApp(),
-  ));
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -28,7 +25,6 @@ class MyApp extends StatelessWidget {
       ),
       home: const MoviesHomeScreen(),
       routes: {
-
         '/profile': (context) => const ProfileScreen(),
         '/settings': (context) => const SettingsScreen(),
         '/language': (context) => const LanguageScreen(),
