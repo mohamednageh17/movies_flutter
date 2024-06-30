@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../utils/MyDrawer.dart';
-import '../movies_list/movies.dart';
+import '../../utils/my_drawer.dart';
+import 'movies_list/movies.dart';
 
 
 class MoviesHomeScreen extends StatelessWidget {

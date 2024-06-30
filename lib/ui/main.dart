@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movie_flutter/provider_practice.dart';
 import 'package:movie_flutter/ui/screens/home/home_screen.dart';
-import 'package:movie_flutter/ui/screens/language/LanguageScreen.dart';
-import 'package:movie_flutter/ui/screens/profile/ProfileScreen.dart';
-import 'package:movie_flutter/ui/screens/settings/SettingsScreen.dart';
+import 'package:movie_flutter/ui/screens/language/language_screen.dart';
+import 'package:movie_flutter/ui/screens/profile/profile_screen.dart';
+import 'package:movie_flutter/ui/screens/settings/settings_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const MoviesHomeScreen(),
       routes: {
+
         '/profile': (context) => const ProfileScreen(),
         '/settings': (context) => const SettingsScreen(),
         '/language': (context) => const LanguageScreen(),
